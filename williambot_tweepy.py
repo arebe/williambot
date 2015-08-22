@@ -38,11 +38,10 @@ statusUpdate = replyText + " LOL @" + replyUser + " #truth"
 print statusUpdate
 
 
-#check if tweet happened today
+#check if tweet happened within last few hours
 sDate = tweets[0].created_at
 age = time.time() - (sDate - datetime.datetime(1970,1,1)).total_seconds()
 print age
 if age < 86400:
     print statusUpdate
     twitter.api.update_status(status=statusUpdate, in_reply_to_status_id = replyTweet)
-
