@@ -1,7 +1,7 @@
 William James on Twitter
 ========================
 
-### @_William_James_
+### @\_William\_James\_
 
 
 
